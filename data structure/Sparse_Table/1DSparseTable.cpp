@@ -15,7 +15,7 @@ void Build_Sparse()
 	{
 		for(int i=1;(i+(1<<j)-1)<=n;i++)
 		{
-           ST[i][j]=min(ST[i][j-1],ST[i+(1<<(j-1))][j-1]);
+           		ST[i][j]=min(ST[i][j-1],ST[i+(1<<(j-1))][j-1]);
 		}
 	}
 }
